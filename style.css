@@ -64,3 +64,20 @@ body {
         font-size: 0.9em;
     }
 }
+
+.confetti {
+    position: fixed;
+    top: -10px;
+    width: 10px;
+    height: 10px;
+    background: #4CAF50;
+    opacity: 0.7;
+    border-radius: 50%;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}

@@ -17,5 +17,18 @@
         <p>Uma mulher maravilhosa na qual eu tenho encanto e muito carinho! Que para você, minha flor, essa mensagem aqueça seu coração assim como você aquece o meu.</p>
         <br>
         <p>Você é luz! Nunca se esqueça disso...</p>
+
+        <script>
+            function createConfetti() {
+                const confetti = document.createElement('div');
+                confetti.classList.add('confetti');
+                confetti.style.left = `${Math.random() * 100}vw`;
+                confetti.style.animationDuration = `${Math.random() * 3 + 2}s`;
+                document.body.appendChild(confetti);
+                setTimeout(() => confetti.remove(), 5000);
+            }
+    
+            setInterval(createConfetti, 200);
+        </script>
 </body>
 </html>
